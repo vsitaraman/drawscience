@@ -1,2 +1,2 @@
-# pubdraw
-PubDraw goodbye page
+# drawscience
+Draw Science goodbye page
