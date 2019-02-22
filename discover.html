@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="It's been a great two years. Thanks for being part of it!">
+
+    <!-- Facebook OG tags -->
+    <meta property="og:image" content="http://drawscience.org/img/thumb.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="It's been a great two years. Thanks for being part of it!"/>
+    <meta property="og:title" content="Bye. &ndash; Draw Science" />
+
+    <!-- Twitter tags  -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@explicahq">
+    <meta name="twitter:creator" content="@viputheshwar">
+    <meta name="twitter:image" content="http://drawscience.org/img/thumb.png" />
+    <meta name="twitter:description" content="It's been a great two years. Thanks for being part of it!" />
+    <meta name="twitter:title" content="Bye. &ndash; Draw Science" />
+
+
+    <meta name="author" content="Viputheshwar Sitaraman">
+    <link rel="icon"
+    type="image/png"
+    href="./img/favicon.png">
+
+    <title>Discover &ndash; Draw Science</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53448030-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-53448030-5');
+    </script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="white">
+    
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h1 class="brand-heading"><img src="./img/logo.png"></h1>
+                        <p class="intro-text">Discover more science</p>
+                        <p class="text-center">Check out some incredible science communication initiatives around the world.</p>
+                        <p class="text-center"><a target="_blank" href="http://drawscience.org" class="btn btn-default"><i class="fa fa-chevron-left"></i>&nbsp; Back</a></p>
+                        <a href="#links" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Links Section -->
+    <section class="container">
+        <div class="row" id="links">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Made with <i class="fa fa-heart-o"></i> in Tucson</p>
+            <p>Copyright &copy; DrawScience LLC 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <script>
+      $.getJSON( "./discover.json", function( data ) {
+        console.log(data);
+        var items = [];
+        var counter = 0;
+        var clearfix = false;
+        $.each( data, function( row ) {
+          line = data[row];
+          if(counter == 2) { counter = -1;}
+          // date = Date.parse(line.date);
+          // items.push( "<li id='" + key + "'>" + val + "</li>" );
+          var twitterHTML = "";
+          if(line.twitter) { twitterHTML = `<a target="_blank" href="https://twitter.com/`+line.twitter+`">
+            <i class="fa fa-twitter"></i> Twitter <i class="fa fa-external-link-alt"></i>
+          </a>`; }
+          var activeHTML = "";
+          if(line.active == false) { activeHTML = ` ( <i class="fa fa-history"></i> Inactive )`; }
+          var html = `<div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+        <a target="_blank" href="`+line.link+`">
+          <img class="img-thumb img-responsive" src="https://image.thum.io/get/maxAge/12/width/700/`+line.screenshot+`" alt="`+line.name+`">
+        </a>
+        <div class="caption">
+          <h3><img class="img-inline img-circle" src="https://avatars.io/twitter/`+line.twitter+`" onerror="this.onerror=null;this.src='https://dummyimage.com/100x100/000/fff&text=D';"/>&nbsp;`+line.name+`</h3>
+          <p class="text-muted">`+line.description+activeHTML+`</p>
+          `+twitterHTML+`
+        </div>
+        </div>
+    </div>`;
+          if(counter == -1){ html += '<div class="clearfix hidden-xs hidden-sm"></div>'}
+          items.push(html);
+          counter = counter + 1;
+        });
+        window.items = items;
+       $('#links').append( items.join( "" ) )
+      });
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+</body>
+
+</html>

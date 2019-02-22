@@ -1,0 +1,122 @@
+[
+ {
+   "name": "Absolutely Maybe",
+   "description": "Evidence and uncertainties about medicine and life explored through Hilda Bastian's comics.",
+   "twitter": "PLOSBlogs",
+   "link": "https://blogs.plos.org/absolutely-maybe/",
+   "active": true,
+   "screenshot": "https://blogs.plos.org/absolutely-maybe/"
+ },
+ {
+   "name": "BuzzHootRoar",
+   "description": "Sharing science with art in 300 words or less.",
+   "twitter": "BuzzHootRoar",
+   "link": "http://buzzhootroar.com/",
+   "active": true,
+   "screenshot": "https://web.archive.org/web/20160501191018/http://buzzhootroar.com/"
+ },
+ {
+   "name": "Latest Thinking",
+   "description": "Open access science videos ranging from astronomy to physics, from, economics (@LT_Econ) to philosophy.",
+   "twitter": "Latest_Thinking",
+   "link": "https://lt.org/",
+   "active": true,
+   "screenshot": "https://lt.org/"
+ },
+ {
+   "name": "@RealScientists",
+   "description": "Real science from real scientists, writers, communicators, artists & clinicians.",
+   "twitter": "RealScientists",
+   "link": "http://twitter.com/RealScientists",
+   "active": true,
+   "screenshot": "http://twitter.com/RealScientists"
+ },
+ {
+   "name": "Useful Science",
+   "description": "Website and podcast for living better, backed by science. Follow for one-sentence summaries of research on happiness, health, productivity, and more.",
+   "twitter": "UsefulSci",
+   "link": "http://www.usefulscience.org/",
+   "active": true,
+   "screenshot": "http://www.usefulscience.org/"
+ },
+ {
+   "name": "SciWorthy",
+   "description": "Sciworthy.com helps science make sense and brings everyone into the conversation.",
+   "twitter": "sciworthy",
+   "link": "https://sciworthy.com/",
+   "active": true,
+   "screenshot": "https://sciworthy.com/"
+ },
+ {
+   "name": "ACA Wiki",
+   "description": "Summarizing academia and quasi-academia, one document at a time at http://acawiki.org",
+   "twitter": "acawiki",
+   "link": "https://acawiki.org",
+   "active": true,
+   "screenshot": "https://acawiki.org"
+ },
+ {
+   "name": "Sci Hub",
+   "description": "Breaking through academic paywalls since 2011. Oреn Aссеss & Ореn Sсiеnсе",
+   "twitter": "Sci_Hub",
+   "link": "http://sci-hub.tw",
+   "active": true,
+   "screenshot": "http://sci-hub.tw"
+ },
+ {
+   "name": "Brief Ideas",
+   "description": "The journal of brief ideas",
+   "twitter": "BriefJournal",
+   "link": "http://beta.briefideas.org/",
+   "active": true,
+   "screenshot": "http://beta.briefideas.org/"
+ },
+ {
+   "name": "Journalist's Resource",
+   "description": "A team of journalists helping other journalists access and understand academic research. A project of Harvard's @ShorensteinCtr. ",
+   "twitter": "JournoResource",
+   "link": "https://journalistsresource.org/",
+   "active": true,
+   "screenshot": "https://journalistsresource.org/"
+ },
+ {
+   "name": "Science Gist",
+   "description": "Science gists are simplified summaries of scientific papers. Our goal is to bring science closer to everyone.",
+   "twitter": "ScienceGist",
+   "link": "ScienceGist",
+   "active": false,
+   "screenshot": "https://web.archive.org/web/20141218065301/http://sciencegist.com/"
+ },
+ {
+   "name": "Publiscize",
+   "description": "Platform that helps scientists break down and promote their published research for lay audiences.",
+   "twitter": "Publiscize",
+   "link": "http://www.fromthelabbench.com/from-the-lab-bench-science-blog/publiscize-your-research",
+   "active": false,
+   "screenshot": "https://web.archive.org/web/20160414131130/http://www.publiscize.com/"
+ },
+ {
+   "name": "Brevy",
+   "description": "Brevy is a wiki for summaries of academic research. We seek to make research more accessible and understandable for scholars and non-scholars alike.",
+   "twitter": "BrevyWiki",
+   "link": "http://brevy.org",
+   "active": false,
+   "screenshot": "https://web.archive.org/web/20160415200742/http://brevy.org/wiki/Main_Page"
+ },
+ {
+   "name": "Three Sentence Science",
+   "description": "The latest intelligence, in three sentences.",
+   "twitter": "",
+   "link": "http://tss.nautil.us/",
+   "active": false,
+   "screenshot": "https://web.archive.org/web/20170225030545/http://tss.nautil.us/"
+ },
+ {
+   "name": "Tiny TOCS",
+   "description": "Tiny Transactions on Computer Science (TinyToCS) is the premier venue for computer science research of 140 characters or less.",
+   "twitter": "",
+   "link": "http://tinytocs.org/",
+   "active": false,
+   "screenshot": "http://tinytocs.org/"
+ }
+]

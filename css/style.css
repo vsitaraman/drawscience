@@ -60,7 +60,51 @@ a.btn:focus {
 .light {
   font-weight: 400;
 }
+.img-inline {
+  height: 2em;
+  display: inline-block;
+  margin-top: -0.5em;
+  background: white;
+}
+.thumbnail {
+  margin: 5px;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0px 5px 15px #0000002a;
+  transition: all ease-in-out 0.5s;
+}
+.thumbnail:hover,
+.thumbnai:focus {
+  box-shadow: 0px 10px 25px #0000004a;
+  transform: translateY(-5px);
+}
+.thumbnail .img-inline {
+  height: 2.5em;
+  margin-top: -1em;
+  border: 2px solid white;
+}
+.caption p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 
+.caption h3 {
+    letter-spacing: -0.5px;
+    font-size: 21px;
+}
+
+.caption a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+body.white {
+    background: white;
+    color: #2f2f2f;
+}
+.caption h3 {
+  text-transform: none;
+  margin-bottom: 5px;
+}
 .intro {
   display: table;
   width: 100%;
