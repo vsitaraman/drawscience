@@ -48,6 +48,14 @@
    "screenshot": "https://sciworthy.com/"
  },
  {
+   "name": "Verbalize Science",
+   "description": "Summarizing academia and quasi-academia, one document at a time at http://acawiki.org",
+   "twitter": "VerbalizeSci",
+   "link": "https://verbalize.science",
+   "active": true,
+   "screenshot": "https://verbalize.science"
+ },
+ {
    "name": "ACA Wiki",
    "description": "Summarizing academia and quasi-academia, one document at a time at http://acawiki.org",
    "twitter": "acawiki",
