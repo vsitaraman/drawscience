@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-		<url>
-			<loc>http://drawscience.org/</loc>
-		</url>
-	</urlset>
 	<sitemap>
-		<loc>https://pub.drawscience.org/sitemap_index.xml</loc>
+		<loc>http://pub.drawscience.org/sitemap.xml</loc>
 		<lastmod>2016-06-24T06:15:15-06:00</lastmod>
 	</sitemap>
 	<sitemap>
